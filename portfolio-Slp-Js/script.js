@@ -1,37 +1,37 @@
-let menu = document.querySelector('#menu');
+// let menu = document.querySelector('#menu');
 
-let navbar = document.querySelector('.nav');
+// let navbar = document.querySelector('.nav');
 
-menu.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+// menu.onclick = () => {
+//     menuIcon.classList.toggle('bx-x');
+//     navbar.classList.toggle('active');
+// }
 
-let sections = document.querySelectorAll('section');
+// let sections = document.querySelectorAll('section');
 
-let navlinks = document.querySelectorAll('header nav a');
+// let navlinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
+// window.onscroll = () => {
     
-    let top = window.scrollY;
+//     let top = window.scrollY;
     
-    sections.forEach(sec => {
+//     sections.forEach(sec => {
         
-        let offset = sec.offsetTop - 100;
+//         let offset = sec.offsetTop - 100;
         
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+//         let height = sec.offsetHeight;
+//         let id = sec.getAttribute('id');
         
-        if (top >= offset && top < offset + height) {
+//         if (top >= offset && top < offset + height) {
             
-            navlinks.forEach(link => {
-                link.classList.remove('active');
-            });
+//             navlinks.forEach(link => {
+//                 link.classList.remove('active');
+//             });
             
-            document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-        }
-    });
+//             document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+//         }
+//     });
 
-    let header = document.querySelector(".header");
+//     let header = document.querySelector(".header");
     
-}
+// }
